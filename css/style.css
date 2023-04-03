@@ -784,12 +784,13 @@ button {
 
      nav .list{
           display: none;
+          margin-top: -24rem;
           
       }
      nav .list.blistBlock{
           display: block;
           position: fixed;
-          margin-top: 373px;
+          margin-top: 359px;
           z-index: 5;
           background-color: #002140;
           display: grid;
@@ -813,6 +814,9 @@ button {
           display: block;
           
       }
+      nav img{
+          width: 100px;
+        }
 
 } 
 
@@ -826,25 +830,28 @@ button {
      justify-content: space-around;
      align-items: center;
    }
-   nav img{
-     width: 25%;
-   }
+   
    nav ul {
      list-style: none;
    }
    nav li {
      display: inline-block;
+     margin-right: 5px;
 
    }
    nav a {
-     font-size: 1.8rem;
+     font-size: 20px;
      text-decoration: none;
    }
    
    nav ul a {
      color: #ffffff;
      font-weight: 600;
+     
    }
    nav ul a:hover {
-     border-bottom: 2px solid #ffffff;
+     border-left: 4px solid #09d066;
+     border-right: 4px solid #09d066;
+     color: white;
+     /* border-right: 2px solid #ffffff; */
    }
