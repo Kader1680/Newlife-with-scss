@@ -1,6 +1,3 @@
-/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
-
-/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
@@ -9,12 +6,6 @@ font-family: "Righteous";
 src: url("../fonts/BalooChettan-Regular.ttf");
 src: url("../fonts/BalooChettan-Regular.ttf");
 }
-/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
-     2) font-family: 'Poppins', sans-serif;
-     ----------------------------------------*****/
-
-
-/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
 @import url(animate.min.css);
 @import url(normalize.css);
@@ -28,7 +19,6 @@ src: url("../fonts/BalooChettan-Regular.ttf");
 @import url(jquery-ui.css);
 @import url(nice-select.css);
 
-/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
      box-sizing: border-box !important;
@@ -183,14 +173,14 @@ img {
      padding: 0;
 }
 
-.form-control:focus {
+/* .form-control:focus {
      border-color: #ffffff !important;
      box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
-}
-
+} */
+/* 
 .navbar-form input {
      border: none !important;
-}
+} */
 
 .badge {
      font-weight: 500;
@@ -221,7 +211,7 @@ button {
 .padding_0{
      padding: 0px;
 }
-
+/* 
 .navbar-light .navbar-nav .nav-link {
     color: #ffffff;
     font-size: 18px;
@@ -249,7 +239,7 @@ button {
     position: relative;
     top: 20px;
     z-index: 1;
-}
+} */
 .banner_section{
      width: 100%;
      float: left;
@@ -678,7 +668,6 @@ button {
     color: #000;
 }
 
-/* info section */
 .info_section {
     background-color: #161616;
     font-family: "Poppins", sans-serif;
@@ -735,7 +724,6 @@ button {
 .info_section .form_container input {
     width: 300px;
     height: 44px;
-    /* border-radius: 5px; */
     border: none;
     outline: none;
     padding-left: 15px;
@@ -752,11 +740,9 @@ button {
     padding: 8px 50px;
     text-transform: uppercase;
     font-size: 16px;
-    /* border-radius: 5px; */
     text-transform: uppercase;
 }
 
-/* end info section */
 .copyright_section {
     width: 100%;
     float: left;
@@ -791,19 +777,74 @@ button {
      padding-bottom: 90px; 
 }
 
-@media (min-width: 768px) {
 
-  .mobile_header { display: none !important; }
-  .destop_header { display: block; }
-
-} 
 
 
 @media (max-width: 767px) {
 
-  .destop_header{ display: none; }
-  .mobile_header { display: block; }
+     nav .list{
+          display: none;
+          
+      }
+     nav .list.blistBlock{
+          display: block;
+          position: fixed;
+          margin-top: 373px;
+          z-index: 5;
+          background-color: #002140;
+          display: grid;
+          width: 100%;
+          padding: 10px 50px;
+          text-align: center;
+      }
+      nav .fa-bars{
+          display: block;
+          font-size: 40px;
+      }
+      
 
 }
-.mobile_header{ display: none; }
+@media (min-width: 768px) {
 
+     nav .fa-bars{
+          display: none;
+      }
+      nav .list{
+          display: block;
+          
+      }
+
+} 
+
+
+
+   nav {
+     width: 100%;
+     background-color: #002140;
+     z-index: 4;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+   }
+   nav img{
+     width: 25%;
+   }
+   nav ul {
+     list-style: none;
+   }
+   nav li {
+     display: inline-block;
+
+   }
+   nav a {
+     font-size: 1.8rem;
+     text-decoration: none;
+   }
+   
+   nav ul a {
+     color: #ffffff;
+     font-weight: 600;
+   }
+   nav ul a:hover {
+     border-bottom: 2px solid #ffffff;
+   }
